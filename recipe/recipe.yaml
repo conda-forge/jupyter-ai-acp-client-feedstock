@@ -1,5 +1,5 @@
 context:
-  version: "0.0.8"
+  version: "0.0.9"
 
 package:
   name: jupyter-ai-acp-client
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-ai-acp-client/jupyter_ai_acp_client-${{ version }}.tar.gz
-  sha256: a7dfe927ab93b8681399fdf270f329d0162fc3b3e6aaa50b865a10b0843ded41
+  sha256: c8f1a6cf052812e06c8cef6a9622c91317192a650738bbedb7e9ac0a2bbda683
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - hatch-jupyter-builder >=0.5
   run:
     - python >=${{ python_min }}
-    - agent-client-protocol
+    - agent-client-protocol >=0.9.0,<0.10.0
     - jupyter-ai-persona-manager >=0.0.6
     - jupyter_server >=2.4.0,<3
     - jupyterlab-chat >=0.20.0
