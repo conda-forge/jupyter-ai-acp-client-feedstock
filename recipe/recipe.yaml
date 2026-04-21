@@ -1,5 +1,5 @@
 context:
-  version: "0.1.1"
+  version: "0.1.2"
 
 package:
   name: jupyter-ai-acp-client
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-ai-acp-client/jupyter_ai_acp_client-${{ version }}.tar.gz
-  sha256: f11e419450e1cfc672c11badb94f45b6550aadfa5b312e5b045f7ffb00bab576
+  sha256: b9411458220d36d0c0f1ece807afb40955dd3f1cd1fccc7f1755111323ba3f63
 
 build:
   noarch: python
