@@ -1,5 +1,5 @@
 context:
-  version: "0.2.0"
+  version: "0.2.1"
 
 package:
   name: jupyter-ai-acp-client
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-ai-acp-client/jupyter_ai_acp_client-${{ version }}.tar.gz
-  sha256: 03b3c7a58322a32b31104184bdf4bda06dc07d0cd5d31ae054c21b35ec618b58
+  sha256: 08af32a4f95c34ae1a4c62ce44deaabc07f4699e8197211f179b6b8d920d7867
 
 build:
   noarch: python
@@ -25,9 +25,9 @@ requirements:
   run:
     - python >=${{ python_min }}
     - agent-client-protocol >=0.11.0,<0.12.0
-    - jupyter-ai-persona-manager >=0.1.0
+    - jupyter-ai-persona-manager >=0.1.0rc0
     - jupyter_server >=2.4.0,<3
-    - jupyterlab-chat >=0.23.0
+    - jupyterlab-chat >=0.23.0a4
     - pydantic >=2,<3
 
 tests:
